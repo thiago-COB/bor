@@ -1,0 +1,53 @@
+"InstallScript"
+{
+	"Run Process"
+	{
+		"VCRedist2005"
+		{
+			"process 1"		"%INSTALLDIR%\\Binaries\\Redist\\vcredist_2005_x86.exe"
+			"command 1"		"/q:a"
+			"description"		"Microsoft VC 2005 Redist Package"
+			"NoCleanUp"		"1"
+		}
+		"VCRedist2005ATL"
+		{
+			"process 1"		"%INSTALLDIR%\\Binaries\\Redist\\vcredist_2005_atl_x86.exe"
+			"command 1"		"/q:a"
+			"description"		"Microsoft VC 2005 ATL Redist Package"
+			"NoCleanUp"		"1"
+		}
+		"VCRedist2008"
+		{
+			"process 1"		"%INSTALLDIR%\\Binaries\\Redist\\vcredist_2008_x86.exe"
+			"command 1"		"/q:a"
+			"description"		"Microsoft VC 2008 Redist Package"
+			"NoCleanUp"		"1"
+		}
+		"VCRedist2010"
+		{
+			"process 1"		"%INSTALLDIR%\\Binaries\\Redist\\vcredist_x86_vs2010sp1.exe"
+			"command 1"		"/q:a"
+			"description"		"Microsoft VC 2010 Redist Package"
+			"NoCleanUp"		"1"
+		}
+		"DirectXRedist"
+		{
+			"process 1"		"%INSTALLDIR%\\Binaries\\Redist\\DXRedistCutdown\\DXSETUP.exe"
+			"command 1"		"/silent"
+			"description"		"Microsoft DirectX Redist Package"
+			"NoCleanUp"		"1"
+		}
+		"NET40Redist"
+		{
+			"process 1"		"%INSTALLDIR%\\Binaries\\Redist\\dotNetFx40_Client_x86_x64.exe"
+			"command 1"		"/passive /promptrestart /log %tmp%\\dotnet_40_setup.log"
+			"description"		"Microsoft .NET Framework 4.0 Redist Package"
+			"NoCleanUp"		"1"
+			"IgnoreExitCode"		"1"
+		}
+	}
+}
+"kvsignatures"
+{
+	"InstallScript"		"4cbc0e3dc624a4339a821dca721c1bf7e7b9967d587d96a6b001013885f0809c04380676893b6989946c0e64306a995d9040da90f41fa324b187c74ad04d24f27a70caa78b0b10c40c5a0ed227aa55bf8bbd3072b471c2408d97400de5ddc2762ce46cffa3b87034e4244c6120b5c7cd2f4d9e41e472aeeb1687fbfc08d6ab0f"
+}
